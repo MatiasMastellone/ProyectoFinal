@@ -306,6 +306,11 @@ footer ol {
         font-size: small;
     }
 
+    .nosotrosLayout {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
     .imagenCamila{
         width: 80vw;
     }
