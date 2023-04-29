@@ -1,0 +1,22 @@
+/*VARIABLES*/
+@import "./utilities/font";
+@import "./utilities/colors";
+
+/*RESETEO*/
+@import "./utilities/reset";
+
+
+
+/*SECCIONES*/
+@import "./seccion/header";
+@import "./seccion/main";
+@import "./seccion/footer";
+
+
+
+/*ANIMACIONES*/
+@import "./utilities/animation";
+
+
+/*MEDIAS QUERIES*/
+@import "./utilities/responsive";

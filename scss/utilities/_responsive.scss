@@ -1,0 +1,73 @@
+/* Responsive tamaño mediano */
+@media (max-width: 768px) {
+    footer{
+        font-size: small;
+    }
+
+    .nosotroParrafo p{
+         font-size: small;
+    }
+
+    .consejoLayout iframe{
+        width: auto;
+    }
+    .consejoLayout p{
+        font-size: small;
+    }
+
+    .nosotrosLayout {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .imagenCamila{
+        width: 80vw;
+    }
+
+
+
+}
+
+/* Responsive tamaño pequeño */
+@media (max-width: 420px) {
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .form-grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-grid label{
+        display: none;
+    }
+
+    .contactgrid{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .nosotrosLayout{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .imagenCamila{
+        width: 60vw;
+        padding: 0;
+    }
+
+    .consejoLayout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}

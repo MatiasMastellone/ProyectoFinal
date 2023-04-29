@@ -1,33 +1,3 @@
-/* FUENTE LOCAL */
-@font-face {
-    font-family: "gullia";
-    src: url("../recursos/fuentes/gullia.otf");
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'gullia';
-    color: rgb(77, 17, 77) !important;
-}
-
-
-
-/* Header Config */
-header {
-    background-image: linear-gradient(to right, rgb(252, 140, 252), rgb(248, 199, 125))
-}
-
-header img {
-    height: 50px;
-    width: 50px;
-    border-radius: 30px;
-    background-color: rgb(255 223 175);
-}
-
-
-/* Main Config */
-
 main {
     background-image: linear-gradient(to right, rgb(252, 140, 252), rgb(248, 199, 125))
 }
@@ -65,19 +35,7 @@ main {
 }
 
 
-footer {
-    display: flex;
-    justify-content: space-evenly;
-    background-image: linear-gradient(to right, rgb(252, 140, 252), rgb(248, 199, 125));
-    padding-top: 10%;
-}
 
-footer ol { 
-    display: flex;
-    list-style: none;
-    width: 20vw;
-    justify-content: space-evenly;
-}
 
 
 .imagenServicios {
@@ -249,34 +207,7 @@ footer ol {
 }
 
 
-@keyframes atencion {
-    0% {
-        font-weight: bold;
-    }
 
-    25% {
-        font-weight: normal;
-    }
-
-    50% {
-        font-weight: lighter;
-    }
-
-    75% {
-        font-weight: normal;
-    }
-
-    100% {
-        font-weight: bold;
-    }
-}
-
-.atencionMove {
-    animation-name: atencion;
-    animation-iteration-count: infinite;
-    animation-duration: 2s;
-    animation-delay: .5s;
-}
 
 .consejoLayout {
     display: flex;
@@ -289,76 +220,3 @@ footer ol {
 }
 
 
-/* Responsive tamaño mediano */
-@media (max-width: 768px) {
-    footer{
-        font-size: small;
-    }
-
-    .nosotroParrafo p{
-         font-size: small;
-    }
-
-    .consejoLayout iframe{
-        width: auto;
-    }
-    .consejoLayout p{
-        font-size: small;
-    }
-
-    .nosotrosLayout {
-        align-items: center;
-        flex-direction: column-reverse;
-    }
-
-    .imagenCamila{
-        width: 80vw;
-    }
-
-
-
-}
-
-/* Responsive tamaño pequeño */
-@media (max-width: 420px) {
-
-    footer{
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-    .form-grid{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .form-grid label{
-        display: none;
-    }
-
-    .contactgrid{
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .nosotrosLayout{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .imagenCamila{
-        width: 60vw;
-        padding: 0;
-    }
-
-    .consejoLayout {
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-}

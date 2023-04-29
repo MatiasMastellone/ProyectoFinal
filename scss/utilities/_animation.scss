@@ -1,0 +1,28 @@
+@keyframes atencion {
+    0% {
+        font-weight: bold;
+    }
+
+    25% {
+        font-weight: normal;
+    }
+
+    50% {
+        font-weight: lighter;
+    }
+
+    75% {
+        font-weight: normal;
+    }
+
+    100% {
+        font-weight: bold;
+    }
+}
+
+.atencionMove {
+    animation-name: atencion;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-delay: .5s;
+}

@@ -1,0 +1,253 @@
+@charset "UTF-8";
+/*VARIABLES*/
+/* FUENTE LOCAL */
+@font-face {
+  font-family: "gullia";
+  src: url("../../res/font/gullia.otf"); }
+
+/*RESETEO*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "gullia";
+  color: #4d114d !important; }
+
+/*SECCIONES*/
+header {
+  background-image: linear-gradient(to right, #fc8cfc, #f8c77d); }
+  header img {
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    background-color: #f7d7a7; }
+
+main {
+  background-image: linear-gradient(to right, #fc8cfc, #f8c77d); }
+
+.titulos {
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 60px; }
+
+.promos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "promo1 Promo2 promo3" "promo1 Promo2 promo3" "promo1 Promo2 promo3"; }
+
+.promo1 {
+  grid-area: promo1; }
+
+.Promo2 {
+  grid-area: Promo2; }
+
+.promo3 {
+  grid-area: promo3; }
+
+.imagenServicios {
+  width: 200px;
+  height: 200px;
+  margin-left: 20vw; }
+
+.imagenInicio {
+  width: 100vw; }
+
+.nosotrosLayout {
+  display: flex;
+  justify-content: space-evenly; }
+
+.imagenCamila {
+  padding-left: 5vw;
+  padding-right: 5vw;
+  width: 50%; }
+
+.contactgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "FormZone ImageZone ImageZone" "FormZone ImageZone ImageZone" "FormZone NullZone NullZone"; }
+
+.FormZone {
+  grid-area: FormZone; }
+
+.labelContacto {
+  margin-left: 10px; }
+
+.ImageZone {
+  grid-area: ImageZone;
+  display: flex; }
+
+.NullZone {
+  grid-area: NullZone; }
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "labNom inpNom" "labApe inpApe" "labEmail inpEmail" "labServ inpServ" "labConsul inpConsul" "labConsul inpConsul"; }
+
+.labNom {
+  grid-area: labNom; }
+
+.labApe {
+  grid-area: labApe; }
+
+.labEmail {
+  grid-area: labEmail; }
+
+.labServ {
+  grid-area: labServ; }
+
+.labConsul {
+  grid-area: labConsul; }
+
+.inpNom {
+  grid-area: inpNom; }
+
+.inpApe {
+  grid-area: inpApe; }
+
+.inpEmail {
+  grid-area: inpEmail; }
+
+.inpServ {
+  grid-area: inpServ; }
+
+.inpConsul {
+  grid-area: inpConsul;
+  display: flex;
+  flex-direction: column; }
+
+.imgContac {
+  width: 50%;
+  margin: auto; }
+
+.parrafos {
+  text-align: center; }
+
+.customSize {
+  width: 70%;
+  margin: auto; }
+
+.letraParrafo {
+  font-family: "gullia";
+  text-align: center;
+  font-size: medium;
+  color: brown; }
+
+.promoStyle {
+  text-align: center; }
+
+.promoStyle a {
+  font-style: italic;
+  text-decoration: none; }
+
+.promoStyle:hover {
+  zoom: 130%; }
+
+.inputContacto {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+.inputContacto:hover {
+  background-color: hotpink; }
+
+.inputContacto:focus {
+  zoom: 110%;
+  font-weight: bold; }
+
+.buttonFormat {
+  background-color: blueviolet;
+  color: #fad1d8 !important; }
+
+.buttonFormat:hover {
+  background-color: #fad1d8;
+  color: blueviolet !important; }
+
+.consejoLayout {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 30px; }
+
+.consejoLayout p {
+  width: 50vw; }
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-image: linear-gradient(to right, #fc8cfc, #f8c77d);
+  padding-top: 10%; }
+  footer ol {
+    display: flex;
+    list-style: none;
+    width: 20vw;
+    justify-content: space-evenly; }
+    footer ol img {
+      width: 30px; }
+
+/*ANIMACIONES*/
+@keyframes atencion {
+  0% {
+    font-weight: bold; }
+  25% {
+    font-weight: normal; }
+  50% {
+    font-weight: lighter; }
+  75% {
+    font-weight: normal; }
+  100% {
+    font-weight: bold; } }
+
+.atencionMove {
+  animation-name: atencion;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-delay: .5s; }
+
+/*MEDIAS QUERIES*/
+/* Responsive tamaño mediano */
+@media (max-width: 768px) {
+  footer {
+    font-size: small; }
+  .nosotroParrafo p {
+    font-size: small; }
+  .consejoLayout iframe {
+    width: auto; }
+  .consejoLayout p {
+    font-size: small; }
+  .nosotrosLayout {
+    align-items: center;
+    flex-direction: column-reverse; }
+  .imagenCamila {
+    width: 80vw; } }
+
+/* Responsive tamaño pequeño */
+@media (max-width: 420px) {
+  footer {
+    flex-direction: column;
+    align-items: center; }
+  .form-grid {
+    display: flex;
+    flex-direction: column; }
+  .form-grid label {
+    display: none; }
+  .contactgrid {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center; }
+  .nosotrosLayout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+  .imagenCamila {
+    width: 60vw;
+    padding: 0; }
+  .consejoLayout {
+    flex-direction: column;
+    align-items: center; } }
