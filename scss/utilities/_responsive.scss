@@ -1,8 +1,7 @@
-$tamanoPantalla: 'grande';
 
 /* Responsive tamaño mediano */
 @media (max-width: 768px) {
-    $tamanoPantalla: 'mediano';
+    
 
     footer {
         font-size: small;
@@ -37,7 +36,7 @@ $tamanoPantalla: 'grande';
 
 /* Responsive tamaño pequeño */
 @media (max-width: 420px) {
-    $tamanoPantalla: 'chico';
+    
 
     footer {
         flex-direction: column;
@@ -81,14 +80,3 @@ $tamanoPantalla: 'grande';
 }
 
 
-@if $tamanoPantalla =='mediano' {
-    body {
-        background-image: linear-gradient(to left, #8cfc9f, #f8c77d);
-    }
-}
-
-@else if $tamanoPantalla =='chico' {
-    body {
-        background-image: linear-gradient(to bottom, #8ce6fc, #f87dd9);
-    }
-}

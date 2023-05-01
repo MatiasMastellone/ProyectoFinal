@@ -10,6 +10,7 @@
   font-weight: bold;
   font-style: italic; }
 
+/*Declaro el mixin*/
 /*RESETEO*/
 * {
   margin: 0;
