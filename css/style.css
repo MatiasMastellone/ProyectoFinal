@@ -147,35 +147,30 @@ main {
 .promoStyle a {
   font-style: italic;
   text-decoration: none; }
-
-.promoStyle:hover {
-  zoom: 130%; }
+  .promoStyle a:hover {
+    zoom: 130%; }
 
 .inputContacto {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
-
-.inputContacto:hover {
-  background-color: hotpink; }
-
-.inputContacto:focus {
-  zoom: 110%;
-  font-weight: bold; }
+  .inputContacto:hover {
+    background-color: hotpink; }
+  .inputContacto:focus {
+    zoom: 110%;
+    font-weight: bold; }
 
 .buttonFormat {
   background-color: blueviolet;
   color: #fad1d8 !important; }
-
-.buttonFormat:hover {
-  background-color: #fad1d8;
-  color: blueviolet !important; }
+  .buttonFormat:hover {
+    background-color: #fad1d8;
+    color: blueviolet !important; }
 
 .consejoLayout {
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 30px; }
-
-.consejoLayout p {
-  width: 50vw; }
+  .consejoLayout p {
+    width: 50vw; }
 
 footer {
   display: flex;
