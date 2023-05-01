@@ -1,18 +1,25 @@
+$tamanoPantalla: 'grande';
+
 /* Responsive tamaño mediano */
 @media (max-width: 768px) {
-    footer{
+    $tamanoPantalla: 'mediano';
+
+    footer {
         font-size: small;
     }
 
-    .nosotroParrafo p{
-         font-size: small;
+    .nosotroParrafo p {
+        font-size: small;
     }
 
-    .consejoLayout iframe{
-        width: auto;
-    }
-    .consejoLayout p{
-        font-size: small;
+    .consejoLayout {
+        iframe {
+            width: auto;
+        }
+
+        p {
+            font-size: small;
+        }
     }
 
     .nosotrosLayout {
@@ -20,7 +27,7 @@
         flex-direction: column-reverse;
     }
 
-    .imagenCamila{
+    .imagenCamila {
         width: 80vw;
     }
 
@@ -30,36 +37,37 @@
 
 /* Responsive tamaño pequeño */
 @media (max-width: 420px) {
+    $tamanoPantalla: 'chico';
 
-    footer{
+    footer {
         flex-direction: column;
         align-items: center;
     }
 
 
-    .form-grid{
+    .form-grid {
         display: flex;
         flex-direction: column;
     }
 
-    .form-grid label{
+    .form-grid label {
         display: none;
     }
 
-    .contactgrid{
+    .contactgrid {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
     }
 
-    .nosotrosLayout{
+    .nosotrosLayout {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
     }
 
-    .imagenCamila{
+    .imagenCamila {
         width: 60vw;
         padding: 0;
     }
@@ -70,4 +78,17 @@
     }
 
 
+}
+
+
+@if $tamanoPantalla =='mediano' {
+    body {
+        background-image: linear-gradient(to left, #8cfc9f, #f8c77d);
+    }
+}
+
+@else if $tamanoPantalla =='chico' {
+    body {
+        background-image: linear-gradient(to bottom, #8ce6fc, #f87dd9);
+    }
 }

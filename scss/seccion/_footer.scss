@@ -1,15 +1,21 @@
 footer {
-    display: flex;
-    justify-content: space-evenly;
-    background-image: linear-gradient(to right, rgb(252, 140, 252), rgb(248, 199, 125));
-    padding-top: 10%;
-     ol { 
-    display: flex;
-    list-style: none;
-    width: 20vw;
-    justify-content: space-evenly;
-     img{
-        width: 30px;
-     }
-     }
-    }
+   display: flex;
+   justify-content: space-evenly;
+   background-image: linear-gradient(to right, rgb(252, 140, 252), rgb(248, 199, 125));
+   padding-top: 10%;
+   p{
+      @include wordStyle(15px,italic);
+   }
+
+   ol {
+      display: flex;
+      list-style: none;
+      width: 20vw;
+      justify-content: space-evenly;
+
+
+      img {
+         width: 30px;
+      }
+   }
+}

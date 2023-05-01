@@ -1,0 +1,4 @@
+@mixin wordStyle($size,$style){
+    font-size: $size;
+    font-style: $style;
+}

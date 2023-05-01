@@ -1,10 +1,15 @@
 /*VARIABLES*/
-@import "./utilities/font";
 @import "./utilities/colors";
+@import "./utilities/font";
+@import "./utilities/mixin";
+
 
 /*RESETEO*/
 @import "./utilities/reset";
 
+
+/*ANIMACIONES*/
+@import "./utilities/animation";
 
 
 /*SECCIONES*/
@@ -13,9 +18,6 @@
 @import "./seccion/footer";
 
 
-
-/*ANIMACIONES*/
-@import "./utilities/animation";
 
 
 /*MEDIAS QUERIES*/
