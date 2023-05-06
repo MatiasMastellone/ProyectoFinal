@@ -1,4 +1,4 @@
-main{
+main {
     background-image: linear-gradient(to right, rgb(252, 140, 252), rgb(248, 199, 125));
 }
 
@@ -76,7 +76,7 @@ main{
 }
 
 .labelContacto {
-    @extend .formatoExtend; 
+    @extend .formatoExtend;
     margin-left: 10px;
 }
 
@@ -220,8 +220,14 @@ main{
     }
 }
 
-.carousel-caption{
-    p{
-        @extend .formatoExtend;
-     }
+.carousel-item {
+    img{
+        width: 70vw;
+    }
+
+    .carousel-caption {
+        p {
+            @extend .formatoExtend;
+        }
+    }
 }

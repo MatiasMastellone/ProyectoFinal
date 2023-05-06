@@ -5,7 +5,7 @@
   font-family: "gullia";
   src: url("../../res/font/gullia.otf"); }
 
-.formatoExtend, .labelContacto, .carousel-caption p {
+.formatoExtend, .labelContacto, .carousel-item .carousel-caption p {
   background-color: white;
   font-weight: bold;
   font-style: italic; }
@@ -45,6 +45,9 @@ header {
     width: 50px;
     border-radius: 30px;
     background-color: #f7d7a7; }
+  header .nav-item:hover a {
+    font-size: 120%;
+    font-weight: bold; }
 
 main {
   background-image: linear-gradient(to right, #fc8cfc, #f8c77d); }
@@ -196,6 +199,9 @@ main {
   padding-bottom: 30px; }
   .consejoLayout p {
     width: 50vw; }
+
+.carousel-item img {
+  width: 70vw; }
 
 footer {
   display: flex;
