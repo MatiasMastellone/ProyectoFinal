@@ -183,8 +183,8 @@ main {
   .inputContacto:hover {
     background-color: hotpink; }
   .inputContacto:focus {
-    zoom: 110%;
-    font-weight: bold; }
+    font-style: italic;
+    background-color: #ff96cb; }
 
 .buttonFormat {
   background-color: blueviolet;
@@ -217,13 +217,14 @@ footer {
     width: 20vw;
     justify-content: space-evenly; }
     footer ol img {
-      width: 30px; }
+      padding: 2px;
+      width: 3vw; }
 
 /*MEDIAS QUERIES*/
 /* Responsive tamaño mediano */
 @media (max-width: 768px) {
-  footer {
-    font-size: small; }
+  footer p {
+    font-size: x-small; }
   .nosotroParrafo p {
     font-size: small; }
   .consejoLayout iframe {

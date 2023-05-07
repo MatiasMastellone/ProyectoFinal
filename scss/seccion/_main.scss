@@ -187,12 +187,12 @@ main {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
     &:hover {
-        background-color: hotpink;
+        background-color: $sombreado;
     }
 
     &:focus {
-        zoom: 110%;
-        font-weight: bold;
+        font-style: italic;
+        background-color: scale-color($color: $sombreado, $saturation: 10%, $lightness: 30%);
     }
 }
 
