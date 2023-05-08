@@ -1,5 +1,7 @@
 main {
     background-image: linear-gradient(to right, rgb(252, 140, 252), rgb(248, 199, 125));
+
+
 }
 
 .titulos {
@@ -150,6 +152,12 @@ main {
 .imgContac {
     width: 50%;
     margin: auto;
+
+    &:hover {
+        border-style: double;
+        border-color: $sombreado;
+        mask-border-slice: inherit;
+    }
 }
 
 .parrafos {
@@ -196,13 +204,16 @@ main {
     }
 }
 
+.invisible{
+    display: none;
+}
 
 .buttonFormat {
     background-color: $violeta;
-    color: rgb(250, 209, 216) !important;
+    color: $sombreado !important;
 
     &:hover {
-        background-color: rgb(250, 209, 216);
+        background-color: $sombreado;
         color: $violeta !important;
     }
 }
@@ -221,7 +232,7 @@ main {
 }
 
 .carousel-item {
-    img{
+    img {
         width: 70vw;
     }
 

@@ -155,6 +155,10 @@ main {
 .imgContac {
   width: 50%;
   margin: auto; }
+  .imgContac:hover {
+    border-style: double;
+    border-color: hotpink;
+    mask-border-slice: inherit; }
 
 .parrafos {
   text-align: center; }
@@ -186,11 +190,14 @@ main {
     font-style: italic;
     background-color: #ff96cb; }
 
+.invisible {
+  display: none; }
+
 .buttonFormat {
   background-color: blueviolet;
-  color: #fad1d8 !important; }
+  color: hotpink !important; }
   .buttonFormat:hover {
-    background-color: #fad1d8;
+    background-color: hotpink;
     color: blueviolet !important; }
 
 .consejoLayout {
