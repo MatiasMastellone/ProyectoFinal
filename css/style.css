@@ -80,7 +80,10 @@ main {
   margin-left: 20vw; }
 
 .imagenInicio {
-  width: 100vw; }
+  display: flex;
+  justify-content: space-around; }
+  .imagenInicio img {
+    width: 95vw; }
 
 .nosotrosLayout {
   display: flex;

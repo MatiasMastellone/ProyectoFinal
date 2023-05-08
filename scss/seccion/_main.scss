@@ -47,7 +47,12 @@ main {
 }
 
 .imagenInicio {
-    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+
+    img {
+        width: 95vw;
+    }
 }
 
 .nosotrosLayout {
