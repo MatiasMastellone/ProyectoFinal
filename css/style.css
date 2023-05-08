@@ -190,9 +190,6 @@ main {
     font-style: italic;
     background-color: #ff96cb; }
 
-.invisible {
-  display: none; }
-
 .buttonFormat {
   background-color: blueviolet;
   color: hotpink !important; }
