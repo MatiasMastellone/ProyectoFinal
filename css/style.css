@@ -74,6 +74,10 @@ main {
 .promo3 {
   grid-area: promo3; }
 
+.ordenaPromo {
+  display: flex;
+  justify-content: space-around; }
+
 .imagenServicios {
   width: 200px;
   height: 200px;
@@ -177,13 +181,22 @@ main {
   color: brown; }
 
 .promoStyle {
-  text-align: center; }
+  text-align: center;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  width: 15vw;
+  border-style: double;
+  border-radius: 10%;
+  border-color: hotpink;
+  border-width: 0.5vw; }
+  .promoStyle:hover {
+    zoom: 130%; }
 
 .promoStyle a {
   font-style: italic;
   text-decoration: none; }
-  .promoStyle a:hover {
-    zoom: 130%; }
+  .promoStyle a h4, .promoStyle a p {
+    font-size: 3vw; }
 
 .inputContacto {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }

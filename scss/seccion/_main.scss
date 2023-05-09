@@ -36,7 +36,10 @@ main {
 }
 
 
-
+.ordenaPromo{
+    display: flex;
+    justify-content:space-around;
+}
 
 
 .imagenServicios {
@@ -185,14 +188,25 @@ main {
 
 .promoStyle {
     text-align: center;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    width: 15vw;
+    border-style: double;
+    border-radius: 10%;
+    border-color: $sombreado;
+    border-width: 0.5vw;
+    &:hover {
+        zoom: 130%;
+    }
 }
 
 .promoStyle a {
     font-style: italic;
     text-decoration: none;
+    
 
-    &:hover {
-        zoom: 130%;
+    h4, p{
+        font-size: 3vw;
     }
 }
 
