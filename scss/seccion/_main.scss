@@ -8,6 +8,12 @@ main {
     text-align: center;
     padding-top: 20px;
     margin-bottom: 60px;
+    font-size: 5vw;
+}
+
+.subtitulo{
+    @extend .titulos;
+    font-size:4vw;
 }
 
 
@@ -181,6 +187,7 @@ main {
 .letraParrafo {
     font-family: "gullia";
     text-align: center;
+    padding: 1vw;
     font-size: medium;
     color: brown;
 
@@ -206,7 +213,7 @@ main {
     
 
     h4, p{
-        font-size: 3vw;
+        font-size: 2vw;
     }
 }
 

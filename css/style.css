@@ -52,10 +52,14 @@ header {
 main {
   background-image: linear-gradient(to right, #fc8cfc, #f8c77d); }
 
-.titulos {
+.titulos, .subtitulo {
   text-align: center;
   padding-top: 20px;
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  font-size: 5vw; }
+
+.subtitulo {
+  font-size: 4vw; }
 
 .promos {
   display: grid;
@@ -177,6 +181,7 @@ main {
 .letraParrafo {
   font-family: "gullia";
   text-align: center;
+  padding: 1vw;
   font-size: medium;
   color: brown; }
 
@@ -196,7 +201,7 @@ main {
   font-style: italic;
   text-decoration: none; }
   .promoStyle a h4, .promoStyle a p {
-    font-size: 3vw; }
+    font-size: 2vw; }
 
 .inputContacto {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
